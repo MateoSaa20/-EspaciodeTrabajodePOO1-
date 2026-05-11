@@ -1,3 +1,4 @@
+package TrabajoPractico2.Ejercicio1;
 public final class PuntoInmutable{
     private final double x;
     private final double y;
