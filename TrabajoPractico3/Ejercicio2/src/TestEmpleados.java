@@ -1,3 +1,5 @@
+package TrabajoPractico3.Ejercicio2.src;
+
 public class TestEmpleados {
     public static void main(String[] args) {
         // 1. Crear un arreglo de la superclase con tipos mixtos (Polimorfismo)
