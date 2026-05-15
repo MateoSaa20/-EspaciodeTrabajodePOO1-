@@ -1,62 +1,64 @@
 package TrabajoPractico2.Ejercicio1;
-public final class PuntoInmutable{
-    private final double x;
-    private final double y;
 
-    public  PuntoInmutable (double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
+import java.io.PrintStream;
 
-    public double getX() {
-        return x;
-    }
 
-    public double getY() {
-        return y;
-    }
+public class PuntoInmutable {
+   private final double x;
+   private final double y;
 
-    public String toString() {
-        return "PuntoInmutable(x = " + x + ", y = " + y + ")";
-    }
+   public PuntoInmutable(double var1, double var3) {
+      this.x = var1;
+      this.y = var3;
+   }
 
-    PuntoInmutable transladar(double dx, double dy) {
-        return new PuntoInmutable(x + dx, y + dy);
-    }
-    PuntoInmutable escalar(double factor) {
-        return new PuntoInmutable(x * factor, y * factor);
-    }
-    PuntoInmutable reflejarEjeX() {
-        return new PuntoInmutable(x, -y);
-    }
-    PuntoInmutable reflejarEjeY() {
-        return new PuntoInmutable(-x, y);
-    }
-    double distanciaAlOrigen() {
-        return Math.sqrt(x * x + y * y);
-    }
-    double distanciaA(PuntoInmutable otro) {
-        double dx = x - otro.x;
-        double dy = y - otro.y;
-        return Math.sqrt(dx * dx + dy * dy);
-    }
+   public double getX() {
+      return this.x;
+   }
 
-    
-public class Main {
+   public double getY() {
+      return this.y;
+   }
 
-    public static void main(String[] args) {
+   public String toString() {
+      return "PuntoInmutable(x = " + this.x + ", y = " + this.y + ")";
+   }
 
-        PuntoInmutable punto1 = new PuntoInmutable(3.0, 4.0);
+   PuntoInmutable transladar(double var1, double var3) {
+      return new PuntoInmutable(this.x + var1, this.y + var3);
+   }
 
-        System.out.println(punto1);
+   PuntoInmutable escalar(double var1) {
+      return new PuntoInmutable(this.x * var1, this.y * var1);
+   }
 
-        PuntoInmutable punto2 =
-                punto1.reflejarEjeX().escalar(2.0).transladar(1.0, 1.0);
-                 System.out.println(punto2);
+   PuntoInmutable reflejarX() {
+      return new PuntoInmutable(this.x, -this.y);
+   }
 
-        System.out.println("Distancia al origen: "+ punto1.distanciaAlOrigen());
+   PuntoInmutable reflejarY() {
+      return new PuntoInmutable(-this.x, this.y);
+   }
 
-        System.out.println("Distancia a (0,0): "+ punto1.distanciaA(new PuntoInmutable(0.0, 0.0)));
-    }
+   double distanciaAlOrigen() {
+      return Math.sqrt(this.x * this.x + this.y * this.y);
+   }
+
+   double distanciaA(PuntoInmutable var1) {
+      double var2 = this.x - var1.x;
+      double var4 = this.y - var1.y;
+      return Math.sqrt(var2 * var2 + var4 * var4);
+   }
+    public static void main(String[] var0) {
+         PuntoInmutable var1 = new PuntoInmutable((double)3.0F, (double)4.0F);
+         System.out.println(var1);
+         PuntoInmutable var2 = var1.reflejarX().escalar((double)2.0F).transladar((double)1.0F, (double)1.0F);
+         System.out.println(var2);
+         System.out.println("Distancia al origen: " + var1.distanciaAlOrigen());
+         PrintStream var10000 = System.out;
+         double var10001 = var1.distanciaA(new PuntoInmutable((double)0.0F, (double)0.0F));
+         var10000.println("Distancia a (0,0): " + var10001);
+      }
 }
-}
+
+
