@@ -1,4 +1,4 @@
-package TrabajoPractico2.Ejercicio2;
+package TrabajoPractico2.Ejercicio2.src;
 
 import java.util.ArrayList;
 import java.util.List;

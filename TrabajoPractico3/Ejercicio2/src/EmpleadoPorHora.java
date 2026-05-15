@@ -1,6 +1,3 @@
-package TrabajoPractico3.Ejercicio2.src;
-
-import java.util.Objects;
 
 public class EmpleadoPorHora extends Empleado {
     private int horasTrabajadas;

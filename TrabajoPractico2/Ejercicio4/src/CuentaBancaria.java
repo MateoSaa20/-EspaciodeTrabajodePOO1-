@@ -1,4 +1,4 @@
-package TrabajoPractico2.Ejercicio4;
+package TrabajoPractico2.Ejercicio4.src;
 
 public class CuentaBancaria {
 

@@ -1,4 +1,4 @@
-package TrabajoPractico3.Ejercicio2.src;
+
 
 public class TestEmpleados {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package TrabajoPractico2.Ejercicio3;
+package TrabajoPractico2.Ejercicio3.src;
 import java.util.*;
 
 public class Biblioteca {

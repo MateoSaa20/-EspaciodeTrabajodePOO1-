@@ -1,4 +1,4 @@
-package TrabajoPractico2.Ejercicio1;
+package TrabajoPractico2.Ejercicio1.src;
 
 import java.io.PrintStream;
 
