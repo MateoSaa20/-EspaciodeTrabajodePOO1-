@@ -1,4 +1,4 @@
-package Ejercicio2;
+package Ejercicio2.src;
 
 public enum Categoria {
     electronica (10.0),

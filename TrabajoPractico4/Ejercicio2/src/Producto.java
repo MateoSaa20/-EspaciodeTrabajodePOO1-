@@ -1,4 +1,6 @@
-package Ejercicio2;
+package Ejercicio2.src;
+
+import Ejercicio2.src.Categoria;
 
 public class Producto implements Comparable<Producto> {
     private String nombre;
